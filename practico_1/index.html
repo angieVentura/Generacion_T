@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>TP 1</h1> <!--Encabezado pedido en la act 5-->
+    <br>
+    <p>Este es un ejemplo de una página web simple con la estructura HTML basica .</p> <!--Parrafo pedido en la act 5-->
+    <br>
+    <h2>Act 1</h2>
+    <br>
+    <h3>Heroes</h3>
+    <ul class="superheroes">
+        <li class="superheroe">Wonder Woman</li>
+        <li class="superheroe">Batman</li>
+        <li class="superheroe">Spiderman</li>
+    </ul>
+    <br>
+    <h3>Villanos</h3>
+
+    <ol class="villanos">
+        <li class="villano">El batman que ríe</li>
+        <li class="villano">Joker</li>
+        <li class="villano">El pingüino</li>
+    </ol>
+    <br>
+    <h2>Act 2</h2>
+
+    <br>
+    <h3>Jugadores de Fútbol Destacados</h3>
+    <ul>
+        <li><a href="https://es.wikipedia.org/wiki/Lionel_Messi">Lionel Messi</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo">Cristiano Ronaldo</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Neymar_Jr">Neymar Jr</a></li>
+    </ul>
+    <br>
+    <h2>Act 3</h2>
+
+    <br>
+    <h3>Imagen y descripción de villanos</h3>
+
+
+    <div class="villano">
+        <img src="https://www.lacasadeel.net/wp-content/uploads/2019/04/Batman-Who-Laughs-Principal.jpg"
+            alt="Batman que Ríe">
+        <h2>Batman que Ríe</h2>
+        <p>El retorcido alter ego del Joker, con una mente brillante y una risa aterradora.</p>
+    </div>
+
+    <div class="villano">
+        <img src="https://www.mundodeportivo.com/alfabeta/hero/2022/09/DC-revela-finalmente-el-nombre-real-del-Joker.jpg?width=768&aspect_ratio=16:9"
+            alt="Joker">
+        <h2>Joker</h2>
+        <p>El payaso Príncipe del Crimen, maestro del caos y la locura.</p>
+    </div>
+
+    <div class="villano">
+        <img src="https://www.lacasadeel.net/wp-content/uploads/2023/09/pinguino-2-696x415.webp" alt="Pingüino">
+        <h2>Pingüino</h2>
+        <p>El genio criminal con un coeficiente intelectual y un plan para dominar Gotham.</p>
+    </div>
+    <br>
+    <h2>Act 4</h2>
+
+    <br>
+    <h3>Videos de Momentos Épicos de Superhéroes</h3>
+    <section class="heroe">
+        <h2>Wonder Woman</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_mftWdac5no?si=O0hWR4a74AF1Zbqv"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Wonder Woman desvía balas con sus brazaletes.</p>
+    </section>
+
+    <section class="heroe">
+        <h2>Batman</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O5u_221sj_8?si=qVRjx8NY0bNRBDv4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Batman en el Batmóvil.</p>
+    </section>
+
+    <section class="heroe">
+        <h2>Spiderman</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Aag9m5ovmU0?si=v1KuIs7BMWr0tuRK"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Spiderman salva a Gwen Stacy de una caída mortal.</p>
+    </section>
+    <br>
+    <h2>Act 6</h2>
+    <br>
+    <h3>Form deportivo</h3>
+    <form action="registro.php" method="post">
+        <label for="nombreCompleto">Nombre Completo:</label>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="10" max="20" required>
+
+        <label for="correoElectronico">Correo Electrónico:</label>
+        <input type="email" id="correoElectronico" name="correoElectronico" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">Seleccionar Categoría</option>
+            <option value="sub12">Sub-12</option>
+            <option value="sub15">Sub-15</option>
+            <option value="sub18">Sub-18</option>
+        </select>
+
+        <label for="posicion">Posición en el Campo:</label>
+        <div class="posiciones">
+            <input type="radio" id="delantero" name="posicion" value="delantero" required>
+            <label for="delantero">Delantero</label>
+
+            <input type="radio" id="mediocampista" name="posicion" value="mediocampista">
+            <label for="mediocampista">Mediocampista</label>
+
+            <input type="radio" id="defensa" name="posicion" value="defensa">
+            <label for="defensa">Defensa</label>
+
+            <input type="radio" id="portero" name="posicion" value="portero">
+            <label for="portero">Portero</label>
+        </div>
+
+        <label for="terminos">Aceptar Términos y Condiciones:</label>
+        <input type="checkbox" id="terminos" name="terminos" required>
+
+        <button type="submit">Enviar Inscripción</button>
+    </form>
+
+    <br>
+    <h2>Act 2</h2>
+    <br>
+    <h3>Tabla de resultados deportivos</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th>País</th>
+                <th>Partidos Ganados</th>
+                <th>Partidos Perdidos</th>
+                <th>Puntos Totales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rafael Nadal</td>
+                <td>España</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Novak Djokovic</td>
+                <td>Serbia</td>
+                <td>4</td>
+                <td>2</td>
+                <td>850</td>
+            </tr>
+            <tr>
+                <td>Roger Federer</td>
+                <td>Suiza</td>
+                <td>3</td>
+                <td>3</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>Alexander Zverev</td>
+                <td>Alemania</td>
+                <td>2</td>
+                <td>4</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>Carlos Alcaraz</td>
+                <td>España</td>
+                <td>1</td>
+                <td>5</td>
+                <td>400</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer> <!--Footer pedido en la act 5-->
+        <p>&copy; 2024 - Ejemplo de Página Web</p>
+    </footer>
+</body>
+
+</html>
