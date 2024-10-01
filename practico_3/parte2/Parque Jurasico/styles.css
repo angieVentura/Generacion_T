@@ -1,0 +1,39 @@
+.carnivoros{
+    background-color: rgb(168, 0, 0);
+}
+
+.herbivoros{
+    background-color: rgb(0, 69, 0);
+}
+#tyrannosaurus{
+    font-size: 24px;
+    color: chocolate;
+}
+
+#triceratops{
+    font-weight: 600;
+    border-bottom: solid 1px;
+}
+
+.voladores-title{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.acuticos-name{
+    font-style: italic;
+    color: blue;
+}
+
+.guias{
+    text-align: center;
+    color: brown;
+}
+
+.atracciones-title{
+    letter-spacing: 3px;
+    border: solid 3px;
+}
+
+img {
+    width: 500px;
+}

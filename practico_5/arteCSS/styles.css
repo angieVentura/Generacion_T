@@ -1,0 +1,26 @@
+.pan{
+    height: 8rem;
+    width: 50rem;
+    background-color: #e59f4d;
+}
+
+#capa2{
+    height: 9rem;
+    width: 60rem;
+    background-color: red;
+    border-radius: 5pc;
+}
+
+div{
+    margin: 0px auto
+}
+
+div#capa1 {
+    border-radius: 50pc 50pc 5pc 5pc;
+    border-bottom: solid 1.2rem #cb7704d4
+}
+
+div#capa3 {
+    border-radius: 5pc 5pc 50pc 50pc;
+    border-top: solid 1.2rem #cb7704d4
+}

@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Optima';
+    src: url('Optima/OptimaLTPro-Medium.otf') format('opentype');
+    /* Usa 'opentype' como formato para archivos .otf */
+    /* Otras propiedades opcionales, como font-weight y font-style, pueden configurarse aquí */
+}
+
+:root {
+    --red: #f54854;
+    --dark-blue: #222438;
+    --blue: #3d4364;
+    --gray-blue: #626b93;
+    --white: #f4f4f4;
+}
+
+body {
+    font-family: 'Optima';
+}
+
+
+.portada {
+    background: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 50%;
+    background: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.titulo {
+    color: var(--white);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 40px 0px 20px 0;
+}
+
+.etiqueta {
+    background: var(--red);
+    color: var(--dark-blue);
+    width: 160px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30px;
+}
+
+p.frase {
+    color: var(--red);
+    font-size: 20px;
+}
+
+p.textoEtiqueta {
+    margin: 0;
+}
+.gif {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    border-radius: 50%;
+    align-self: center;
+    border: solid var(--red) 4px;
+    width: 50%;
+}
+
+@media (max-width: 1100px) {
+
+    .gif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img.perfil {
+        margin: 0;
+        width: 85%;
+    }
+
+    h1.titulo {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    h1.titulo {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* .portada {
+        flex-direction: column-reverse;
+    } */
+
+    .text {
+        width: 100%;
+        height: 400px;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+
+
+
+.integrantes {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+h3.tituloInt {
+    text-align: center;
+    padding: 45px 0 30px 0;
+    font-weight: 900;
+    margin: 0;
+    color: var(--red);
+}
+
+.foto {
+    width: 200px;
+    background: var(--dark-blue);
+    height: 220px;
+}
+
+.integrante {
+    width: 200px;
+    text-align: center;
+
+}
+
+p.titulo-proyecto {
+    padding: 20px 0 10px 0;
+    color: var(--white);
+    margin: 0;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 70px 10px 70px;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+
+}
+
+
+.carousel {
+    width: 50%;
+    height: -webkit-fill-available;
+}
+
+.texto {
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about{
+    width: 100%;
+}
+
+.info-card.grafica.contacto {
+    height: 600px;
+}
+
+.textoProd {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto.grafico.about {
+    height: 600px;
+}
+
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: end;
+    }
+}
+
+
+.info-card.grafica.contacto{
+    background-color: var(--blue);
+}
+
+/* Estilos para pantallas grandes */
+.info-card {
+    display: flex;
+    background: var(--dark-blue);
+    height: 400px;
+}
+
+.inf-contenedor {
+    height: -webkit-fill-available;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.info {
+    font-size: 21px;
+    color: var(--white);
+    margin: 0;
+}
+
+h3.titulo {
+    padding: 0px 0 20px 0px;
+    font-weight: 900;
+    color: var(--red);
+}
+
+.carousel-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: -webkit-fill-available;
+}
+
+.carousel {
+    width: 80%;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+
+    .texto {
+        width: 80%;
+        height: auto;
+    }
+
+    .info-card {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carousel-contenedor.grafico {
+        order: 2;
+    }
+
+    .texto.grafico {
+        order: 1;
+    }
+
+    .inf-contenedor {
+        margin: 0px 0px 0px 0px;
+        padding: 35px 0px;
+    }
+
+    .carousel-contenedor {
+        margin: 0px 0px 40px 0px;
+    }
+
+    .inf-contenedor,
+    .carousel-contenedor {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.info-card.grafica {
+    background: var(--dark-blue);
+}
+
+p.text-footer {
+    padding: 15px 0px 0px 0px;
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin: 0;
+    font-weight: 900;
+}
+
+.footer {
+    background: var(--red);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px 20px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr.Lfooter {
+    margin: auto;
+    height: 2px;
+    background-color: #ffd9f2;
+    width: 90%;
+}
+
+nav.navbar.navbar-expand-sm.navbar-dark {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--red);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--red);
+}
+
+#navbar {
+    position: fixed;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 70px;
+}
+
+div#menu-elementos {
+    padding: 0px 60px 0px 60px;
+}
+
+li.nav-item {
+    padding: 0px 0px 0px 15px;
+}
+
+img.ft {
+    width: 200px;
+}
+
+img.imginfo {
+    max-width: 77%;
+}
+
+.portada.pruducto {
+    justify-content: center;
+}
+
+form {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: var(--red);
+}
